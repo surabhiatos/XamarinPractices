@@ -14,7 +14,6 @@ namespace EmployeeManage
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AddViewPage : ContentPage
     {
-        bool _isReadOnly;
         public AddViewPage(Models.Employee employee, bool isReadOnly = true)
         {
             InitializeComponent();
