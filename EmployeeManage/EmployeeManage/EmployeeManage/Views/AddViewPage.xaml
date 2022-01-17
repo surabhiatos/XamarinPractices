@@ -22,7 +22,7 @@
                    Placeholder="LastName" />
             <DatePicker Date="{Binding DateOfBirth , Mode=TwoWay}" Format="dd/MM/yyyy" MaximumDate="01/01/2021" MinimumDate="01/01/2004" />
             <Editor Text="{Binding Address, Mode=TwoWay}" Placeholder="Address" />
-            <Entry Text="{Binding Package, Mode=TwoWay}" Placeholder="Package"></Entry>
+            <Entry Text="{Binding Package, Mode=TwoWay}" Placeholder="Package"/>
             <Picker ItemsSource="{Binding DepartmentList}"
                     SelectedIndex="{Binding DepartmentId}"
                     Title="Department"
@@ -34,10 +34,6 @@
             <RadioButton  IsChecked="{Binding RdbMale,Mode=TwoWay}"
                           Content="Male"
                     GroupName="Gender"/>
-            
-            
-
-            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
