@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EmployeeManage.LoginPageEmp"
+             BackgroundImageSource="https://images.pexels.com/photos/3970396/pexels-photo-3970396.jpeg ">
+
+   
+    
+    <ContentPage.Content>
+        <StackLayout Padding="0"  HorizontalOptions="FillAndExpand" >
+            
+            
+            
+            <Grid>
+                <StackLayout Padding="0" Margin="0">
+                    <Frame BackgroundColor="PeachPuff" HeightRequest="230" WidthRequest="7" HorizontalOptions="FillAndExpand" Padding="0" > 
+                        <Image Source="https://lh5.googleusercontent.com/p/AF1QipPzZPUOngcW0XoTsI3J69w63Ndli3wPFWmhujZt=w1080-k-no " Aspect="AspectFill" Margin="0" />
+                        
+                    </Frame> 
+                </StackLayout>
+                <StackLayout Margin="15,185,20,0">
+                    <Frame BackgroundColor="#EFEEE6" HasShadow="True" HeightRequest="352" HorizontalOptions="FillAndExpand">
+                        
+                        <StackLayout>
+                        <StackLayout HorizontalOptions="CenterAndExpand">
+                                <Image Source="https://lh5.googleusercontent.com/p/AF1QipPzZPUOngcW0XoTsI3J69w63Ndli3wPFWmhujZt=w1080-k-no " Aspect="AspectFill"
+                                                   WidthRequest="334"
+                   HeightRequest="0"
+                   VerticalOptions="FillAndExpand"
+                   ></Image>
+                                <Image Source="https://upload.wikimedia.org/wikipedia/commons/d/d6/Atos_logo.png"
+                   WidthRequest="50"
+                   HeightRequest="50"
+                   VerticalOptions="FillAndExpand"
+                   ></Image>
+                                <Label Text="Sign in" TextColor="navy" FontSize="Small" FontAttributes="Bold " HorizontalTextAlignment="Center" 
+                                   />
+                             
+                            </StackLayout>
+
+                        <StackLayout Margin="0,25,0,0">
+                            <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Frame BackgroundColor="CadetBlue" CornerRadius="50" HeightRequest="35" WidthRequest="35" Padding="0" Margin="7">
+                                            <Image Source="https://lh5.googleusercontent.com/p/AF1QipPzZPUOngcW0XoTsI3J69w63Ndli3wPFWmhujZt=w1080-k-no " Aspect="AspectFill"
+                                                   WidthRequest="50"
+                   HeightRequest="50"
+                   VerticalOptions="FillAndExpand"
+                   ></Image>
+                                        </Frame>
+                                        <Entry x:Name="txtUsername"
+                                                Placeholder="Enter DAS ID"
+                                                TextColor="Black"
+                                                PlaceholderColor="Gray"
+                                                VerticalOptions="CenterAndExpand" 
+                                               HorizontalOptions="FillAndExpand"
+                                               
+                                        />
+                                        
+                                        
+                                    </StackLayout>
+                            </Frame>
+                                <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0,20,0,0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Frame BackgroundColor="DarkSlateBlue" CornerRadius="50" HeightRequest="35" WidthRequest="35" Padding="0" Margin="7" HorizontalOptions="Start">
+                                            <StackLayout Padding="0" Margin="0">
+                                                <Frame BackgroundColor="PeachPuff" HeightRequest="230" VerticalOptions="FillAndExpand" Padding="0" >
+                                                    <Image Source="https://lh5.googleusercontent.com/p/AF1QipPzZPUOngcW0XoTsI3J69w63Ndli3wPFWmhujZt=w1080-k-no " Aspect="AspectFill" Margin="0" />
+
+                                                </Frame>
+                                            </StackLayout>
+
+                                        </Frame>
+                                        <Entry x:Name="txtPassword"
+                                                Placeholder="Enter password"
+                                                TextColor="Black"
+                                               IsPassword="True"
+                                                PlaceholderColor="Gray"
+                                                VerticalOptions="CenterAndExpand" 
+                                               HorizontalOptions="FillAndExpand"
+                                               
+                                        />
+                                        
+
+                                    </StackLayout>
+                                    
+                                </Frame>
+                                <Button VerticalOptions="Center"
+                    Text="Login"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    BackgroundColor="Purple"
+                    BorderColor="ForestGreen"
+                    BorderWidth="1.5"
+                    CornerRadius="30"
+                    Clicked="Button_Clicked"
+                    ></Button>
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+                
+                
+
+
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              
+             x:Class="EmployeeManage.AddViewPage">
+
+
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Save" IsEnabled="{Binding IsReadOnlyPage}"  Command="{Binding SaveCommand}"/>
+        <ToolbarItem Text="Delete" IsEnabled="{Binding IsReadOnlyPage}"  Command="{Binding DeleteCommand}"/>
+    </ContentPage.ToolbarItems>
+
+
+
+    <ContentPage.Content>
+        
+        <StackLayout>
+            <Entry Text="{Binding FirstName, Mode=TwoWay}"
+                   Placeholder="FirstName">
+                 </Entry>
+            <Entry Text="{Binding LastName,Mode=TwoWay}"
+                   Placeholder="LastName" ></Entry>
+            <DatePicker Date="{Binding DateOfBirth , Mode=TwoWay}" Format="dd/MM/yyyy" MaximumDate="01/01/2021" MinimumDate="01/01/2004" > </DatePicker>
+            <Editor Text="{Binding Address, Mode=TwoWay}" Placeholder="Address" > </Editor>
+            <Entry Text="{Binding Package, Mode=TwoWay}" Placeholder="Package"></Entry>
+            <Picker ItemsSource="{Binding DepartmentList}"
+                    SelectedIndex="{Binding DepartmentId}"
+                    Title="Department"
+                    ItemDisplayBinding="{Binding DepartmentName}"
+                    VerticalOptions="CenterAndExpand"/>
+            <RadioButton IsChecked="{Binding RdbFemale, Mode=TwoWay}"
+                         Content="Female"
+                             GroupName="Gender"/>
+            <RadioButton  IsChecked="{Binding RdbMale,Mode=TwoWay}"
+                          Content="Male"
+                    GroupName="Gender"/>
+            
+            
+
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

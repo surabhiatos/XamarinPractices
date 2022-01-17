@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EmployeeManage.FlyoutPageEmpDetail"
+             Title="WELCOME!
+             "
+             BackgroundColor="#112B47"
+             HeightRequest="100">
+
+    <StackLayout Padding="10">
+        <!-- <Label Text="This is a company page."
+           TextColor="White"
+           FontAttributes="Bold"/>
+        <ScrollView VerticalOptions="Center" Margin="10" >
+            <Label Text="Atos Syntel is a subsidiary of Atos and a multinational provider of integrated technology and business services. The company is led by Rakesh Khanna. Atos Syntel was created by the acquisition of Syntel, Inc. by Atos S.E., which was announced on July 22, 2018, and completed on October 9, 2018.&#10;&#10;Atos is the global leader in secure and decarbonized digital with a range of market-leading digital solutions along with consultancy services, digital security and decarbonization offerings; an end-to-end partnership approach. &#x2014; A net-zero pioneer in decarbonization services and products, our commitment to the future extends to carbon-neutrality for our organization as well as our clients and partners. Together, we're a force pushing the boundaries of scientific and technological excellence to ensure that everyone can live, work and thrive sustainably in a secure information space. &#10;&#10; Atos is a SE (Societas Europaea), listed on Euronext Paris and included on the CAC 40 ESG and Next 20 Paris Stock Indexes."
+                   FontSize="Medium"
+                   TextColor="White"/>
+        </ScrollView> -->
+        <WebView Source="https://atos.net/en/"
+                 VerticalOptions="FillAndExpand" />
+    </StackLayout>
+
+
+
+
+</ContentPage>
+    
